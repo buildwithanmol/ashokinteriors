@@ -111,7 +111,7 @@ export default function page() {
             <div className="overflow-hidden" >
               <Link href='/project'>
                 <Image
-                  src="/Ctg Images/1.jpg"
+                  src="/CTG_Images/1.jpg"
                   alt="categories"
                   width={300}
                   height={300}
@@ -127,7 +127,7 @@ export default function page() {
             <div className="" >
               <Link href='/project'>
                 <Image
-                  src="/Ctg Images/2.jpg"
+                  src="/CTG_Images/2.jpg"
                   alt="categories"
                   width={300}
                   height={300}
@@ -143,7 +143,7 @@ export default function page() {
             <div className="" >
               <Link href='/project'>
                 <Image
-                  src="/Ctg Images/3.jpg"
+                  src="/CTG_Images/3.jpg"
                   alt="categories"
                   width={300}
                   height={300}

@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
 
 const Page = () => {
-  const [ctg, setctg] = useState("Studio");
+  const [ctg, setctg] = useState("Studios");
   const ProductCtg = [
     {
       CtgName: "Home Theatre",
