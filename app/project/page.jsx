@@ -24,7 +24,7 @@ const Page = () => {
       ]
     },
     {
-      CtgName: "Residential",
+      CtgName: "Residence",
       ImgTxt: [
         "/CategoryImages/ResidentialImg/Img12.webp",
         "/CategoryImages/ResidentialImg/Img11.webp",
@@ -143,8 +143,8 @@ const Page = () => {
   return (
     <main>
       <section className="ctgSection">
-        <h1 className="uppercase text-3xl">One Face For Your Entire Project</h1>
-        <div>
+        <h1 className="uppercase md:text-3xl font-bold text-xl">One Face For Your Entire Project</h1>
+        <div className="flex-wrap flex">
           {ProductCtg.map((elem, i) => (
             <p
               key={i}
@@ -155,6 +155,7 @@ const Page = () => {
                   : "3px solid transparent"
                   }`,
               }}
+              className="whitespace-nowrap "
             >
               {elem.CtgName}
             </p>

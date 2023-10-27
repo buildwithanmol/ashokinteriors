@@ -76,7 +76,7 @@ export default function page() {
         <p className="text-[16px] font-semibold">INTERIORS</p>
         <p className="text-[16px] font-semibold">ACOUSTICS</p>
       </div>
-      <div className="w-full px-2 h-[450px] md:h-[550px] flex gap-2">
+      <div className="w-full h-[450px] md:h-[85vh] flex gap-2">
           <Swiper
             modules={[Autoplay, EffectFade, Pagination, Navigation]}
             pagination={{ clickable: true }}
@@ -160,7 +160,7 @@ export default function page() {
 
 
       <section className="flex md:flex-col items-center px-8" >
-        <h2 className="text-3xl my-4 ">Residential</h2>
+        <h2 className="text-2xl my-4 ">Residential</h2>
 
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -209,7 +209,7 @@ export default function page() {
             })
           }
         </Swiper>
-        <h2 className="text-3xl my-4 ">Showroom</h2>
+        <h2 className="md:text-3xl text-2xl my-4 ">Showroom</h2>
 
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -258,7 +258,7 @@ export default function page() {
             })
           }
         </Swiper>
-        <h2 className="text-3xl my-4  ">Studio</h2>
+        <h2 className="md:text-3xl text-2xl my-4  ">Studio</h2>
 
         <Swiper
           modules={[Autoplay, Pagination]}

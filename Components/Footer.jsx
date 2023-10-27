@@ -4,8 +4,8 @@ function Footer() {
   const LinksArray = [
     {
       h3: "COMPANY",
-      link: ["SHOP", "ABOUT", "PROJECT", "CONTACT"],
-      hrefs: ["/shop", "/about", "/project", "/contact"],
+      link: [ "ABOUT", "PROJECT", "CONTACT"],
+      hrefs: [ "/about", "/project", "/contact"],
     },
     {
       h3: "SOCIALS",
@@ -25,7 +25,7 @@ function Footer() {
           ))}
         </div>
       ))}
-      <p>Shop No - 03, C-23,Poonam Sagar Complex,Mira Road(E), Dist-ThaneMaharastra, Pin - 401107</p>
+      <p>Shop No - 03, C-23, Poonam Sagar Complex, Mira Road(E), Dist-Thane, Maharastra, Pin - 401107</p>
       <span>ASHOK INTERIORS. ALL RIGHTS RESERVED © 2023</span>
     </section>
   );
