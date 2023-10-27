@@ -57,7 +57,7 @@ const Page = () => {
           <div className="bg-white rounded-lg p-6 shadow-md flex flex-col items-center">
             <RiUserStarLine className="text-6xl text-red-400 " />
             <div className="mt-4">
-              <h3 className="text-3xl font-semibold">30</h3>
+              <h3 className="text-3xl font-semibold">30+</h3>
               <p className="text-gray-700">Years of Experience</p>
             </div>
           </div>
@@ -65,7 +65,7 @@ const Page = () => {
           <div className="bg-white rounded-lg p-6 shadow-md flex flex-col items-center">
             <RiThumbUpLine className="text-6xl text-red-400" />
             <div className="mt-4">
-              <h3 className="text-3xl font-semibold">200</h3>
+              <h3 className="text-3xl font-semibold">200+</h3>
               <p className="text-gray-700">Projects Completed</p>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Page = () => {
           <div className="bg-white rounded-lg p-6 shadow-md flex flex-col items-center">
             <RiGroupLine className="text-6xl text-red-400" />
             <div className="mt-4">
-              <h3 className="text-3xl font-semibold">190</h3>
+              <h3 className="text-3xl font-semibold">190+</h3>
               <p className="text-gray-700">Satisfied Clients</p>
             </div>
           </div>
