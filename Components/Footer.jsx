@@ -25,7 +25,7 @@ function Footer() {
           ))}
         </div>
       ))}
-      <p>Shop No - 03, C-23, Poonam Sagar Complex, Mira Road(E), Dist-Thane, Maharastra, Pin - 401107</p>
+      <p>Shop No - 03, C-23, Poonam Sagar Complex, Mira Road(E), Thane,<br /> Maharastra,<br /> 401107</p>
       <span>ASHOK INTERIORS. ALL RIGHTS RESERVED © 2023</span>
     </section>
   );

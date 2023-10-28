@@ -25,9 +25,9 @@ const Page = () => {
       <section className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center gap-8 p-6 bg-gray-100 rounded-lg">
         <div className="">
           <h2 className="text-2xl font-semibold text-red-400">Our Esteemed Clients</h2>
-          <ul className="mt-4 text-gray-700 list-none">
-            <li>LAMBODARA STUDIOS SIDDHARTH & SHANKAR</li>
-            <li>MAHADEVAN SUBHASH STUDIOS PVT. LTD.</li>
+          <ul className="mt-4 text-gray-700 list-disc">
+            <li>LAMBODARA STUDIOS SIDDHARTH & SHANKAR MAHADEVAN </li>
+            <li>SUBHASH STUDIOS PVT. LTD.</li>
             <li>SOUND AND VISION STUDIOS PVT. LTD.</li>
             <li>ISLAND CITY STUDIOS</li>
             <li>CANOPY MEDIA</li>
@@ -38,7 +38,7 @@ const Page = () => {
 
         <div>
           <h2 className="text-2xl font-semibold text-red-400">Our Respected Architects</h2>
-          <ul className=" mt-4 text-gray-700">
+          <ul className="list-disc mt-4 text-gray-700">
             <li>MUNRO ACOUSTICS</li>
             <li>SOUND WIZARD</li>
             <li>ZZ ARCHITECTS</li>

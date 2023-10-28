@@ -143,7 +143,7 @@ const Page = () => {
   return (
     <main>
       <section className="ctgSection">
-        <h1 className="uppercase md:text-3xl font-bold text-xl">One Face For Your Entire Project</h1>
+        <h1 className="uppercase md:text-3xl text-xl">One Face For Your Entire Project</h1>
         <div className="flex-wrap flex">
           {ProductCtg.map((elem, i) => (
             <p
