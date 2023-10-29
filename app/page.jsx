@@ -109,7 +109,7 @@ export default function page() {
 
           <div className="wrapper">
             <div className="overflow-hidden" >
-              <Link href='/project'>
+              <Link href="/project/residence">
                 <Image
                   src="/CTG_Images/1.jpg"
                   alt="categories"
@@ -125,7 +125,7 @@ export default function page() {
 
           <div className="wrapper  ">
             <div className="" >
-              <Link href='/project'>
+            <Link href="/project/showroom">
                 <Image
                   src="/CTG_Images/2.jpg"
                   alt="categories"
@@ -141,7 +141,7 @@ export default function page() {
 
           <div className="wrapper cursor-pointer  ">
             <div className="" >
-              <Link href='/project'>
+            <Link href="/project/studios">
                 <Image
                   src="/CTG_Images/3.jpg"
                   alt="categories"
@@ -150,7 +150,7 @@ export default function page() {
                   className="object-cover   w-[100px] h-[100px] rounded-full md:h-[300px] md:w-[300px] shadow-md transition-all cursor-pointer"
                 />
               </Link>
-              <h1>Studio</h1>
+              <h1>Studios</h1>
             </div>
           </div>
 

@@ -96,10 +96,10 @@ function Header() {
           >
             {e.name.toUpperCase()}
             <div className="subMenudiv shadow-xl border absolute z-50 rounded-xl  p-4 flex flex-col whitespace-nowrap">
-              <p className="hover:text-Secondary text-md" onClick={() => window.location.href = '/project'} >Residence</p>
-              <p className="hover:text-Secondary text-md" onClick={() => window.location.href = '/project'}>Showroom</p>
-              <p className="hover:text-Secondary text-md" onClick={() => window.location.href = '/project'}>Studio</p>
-              <p className="hover:text-Secondary text-md" onClick={() => window.location.href = '/project'}>Home Theatre</p>
+              <p className="hover:text-Secondary text-md" onClick={() => window.location.href = '/project/residence'} >Residence</p>
+              <p className="hover:text-Secondary text-md" onClick={() => window.location.href = '/project/showroom'}>Showroom</p>
+              <p className="hover:text-Secondary text-md" onClick={() => window.location.href = '/project/studios'}>Studios</p>
+              <p className="hover:text-Secondary text-md" onClick={() => window.location.href = '/project/hometheatre'}>Home Theatre</p>
             </div>
           </Link> : <Link
             key={i}

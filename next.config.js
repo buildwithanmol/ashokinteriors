@@ -24,6 +24,15 @@ const nextConfig = {
 
 module.exports = {
   nextConfig,
+  async redirects() {
+    return [
+      {
+        source: '/project',
+        destination:'/project/studios',
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
