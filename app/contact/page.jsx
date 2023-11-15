@@ -21,7 +21,7 @@ const page = () => {
             <h2 className="font-semibold">ADDRESS:</h2>
             <p className="p-2 text-sm md:text-xl">
               Shop No - 03, C-23, Poonam Sagar Complex, Mira Road(E),
-              Thane, Maharastra,
+              Thane, Maharashtra,
               <br /> Pin - 401107
             </p>
           </div>
@@ -30,7 +30,7 @@ const page = () => {
             <RiPhoneLine className="border-2 w-16 h-16 rounded-full border-Secondary p-2" />
             <h2 className="font-semibold">CALL US:</h2>
             <p className="p-2 text-sm md:text-xl">
-              +91 98192150880 <br /> +91 2249728988
+            +91 9819215088 <br /> +91 2249728988
             </p>
           </div>
           <div className="flex flex-col items-center justify-start gap-1 text-center pt-2">
