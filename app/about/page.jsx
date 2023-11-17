@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { RiUserStarLine, RiThumbUpLine, RiGroupLine } from "react-icons/ri";
 
@@ -78,7 +79,9 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <button className="p-2 mt-4 bg-Secondary border border-Secondary hover:bg-Primary text-white hover:text-Secondary transition-all rounded-md">Contact Us</button>
+       <Link href="/contact">
+       <button className="p-2 mt-4 bg-Secondary border border-Secondary hover:bg-Primary text-white hover:text-Secondary transition-all rounded-md">Contact Us</button>
+       </Link>
 
       </section>
 
