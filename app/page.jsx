@@ -314,6 +314,7 @@ export default function page() {
         />
         <br />
       </section>
+      <h1 className="text-lg">Visit <Link href="https://www.ashofy.com/" className="text-Secondary hover:underline">Ashofy.com</Link> to Buy the Featured Products</h1>
 
       <section className="border-t pt-2">
         <div className="clientsImageDiv">
@@ -340,8 +341,10 @@ export default function page() {
             ))}
           </div>
         </div>
+        
         <span className="gradSection"></span>
       </section>
+
 
     </main>
   );

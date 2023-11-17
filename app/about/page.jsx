@@ -78,7 +78,10 @@ const Page = () => {
             </div>
           </div>
         </div>
+        <button className="p-2 mt-4 bg-Secondary border border-Secondary hover:bg-Primary text-white hover:text-Secondary transition-all rounded-md">Contact Us</button>
+
       </section>
+
     </main>
   );
 };
