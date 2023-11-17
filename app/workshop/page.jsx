@@ -17,8 +17,9 @@ const page = () => {
         <h1 className='text-3xl font-semibold p-1 px-2'>Our Workshop</h1>
 
 
-        <section
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full mt-3 p-2"
+       <div className='flex flex-col items-center justify-center'>
+       <section
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full mt-3 p-2 md:max-w-6xl"
         >
           {img.map((elem, i) => (
             <div className="overflow-hidden" key={i}>
@@ -33,6 +34,7 @@ const page = () => {
             </div>
           ))}
         </section>
+       </div>
 
 
       </main>
