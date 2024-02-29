@@ -9,8 +9,8 @@ function Footer() {
     },
     {
       h3: "SOCIALS",
-      link: ["INSTAGRAM", "FACEBOOK", "TWITTER"],
-      hrefs: ["instagram.com", "facebook.com", "twitter.com"],
+      link: ["INSTAGRAM", "FACEBOOK"],
+      hrefs: ["https://www.instagram.com/ashofyyourspace/?hl=en", "https://www.facebook.com/people/Ashofyyours-Pace/61555893284192/",],
     },
   ];
   return (

@@ -1,19 +1,18 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import CtaButton from "@/Components/CtaButton";
-import { RiArrowRightLine } from "react-icons/ri";
+import { RiArrowRightLine, RiCloseCircleLine } from "react-icons/ri";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation"
+import "swiper/css/navigation";
 import { Pagination, EffectFade, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css/effect-fade";
-import "swiper/css/autoplay"
+import "swiper/css/autoplay";
 import Link from "next/link";
 
 export default function page() {
-
   const HeroSecImg = [
     "/BG Images/_D0A5093.webp",
     "/BG Images/_D0A5930.webp",
@@ -28,7 +27,7 @@ export default function page() {
     "/BG Images/FB_IMG_1688702751912.webp",
     "/BG Images/FB_IMG_1688702765935.webp",
     "/BG Images/IMG_1844.webp",
-    "client/public/BG Images/IMG-20200313-WA0148.webp"
+    "client/public/BG Images/IMG-20200313-WA0148.webp",
   ];
 
   const Residence = [
@@ -42,7 +41,7 @@ export default function page() {
     "/CategoryImages/ResidentialImg/Img2.webp",
     "/CategoryImages/ResidentialImg/Img4.webp",
     "/CategoryImages/ResidentialImg/Img5.webp",
-  ]
+  ];
   const Commercial = [
     "/CategoryImages/Showroom/_D0A5187.jpg",
     "/CategoryImages/Showroom/_D0A5454.jpg",
@@ -52,13 +51,13 @@ export default function page() {
     "/CategoryImages/Showroom/1P2A4508.jpg",
     "/CategoryImages/Showroom/1P2A4873.jpg",
     "/CategoryImages/Showroom/1P2A4921.jpg",
-  ]
+  ];
   const Studio = [
     "/CategoryImages/StudioImages/Img1.webp",
     "/CategoryImages/StudioImages/Img2.webp",
     "/CategoryImages/StudioImages/Img3.webp",
     "/CategoryImages/StudioImages/Img5.webp",
-  ]
+  ];
 
   const ClientsImg = [
     "/ClientsImg/image 1.jpg",
@@ -68,47 +67,46 @@ export default function page() {
     "/ClientsImg/image 5.jpg",
     "/ClientsImg/image 6.jpg",
   ];
+  const [PreviewImg, setPreviewImg] = useState(null);
   return (
     <main className="HomeMain">
       <div className="w-full md:gap-8 gap-2 pb-3 items-center justify-center text-xs md:text-sm hidden md:flex ">
         <p className="text-[16px] font-semibold border-Secondary">FURNITURES</p>
-        <p className="text-[16px] font-semibold border-Secondary">CONTRACTORS</p>
+        <p className="text-[16px] font-semibold border-Secondary">
+          CONTRACTORS
+        </p>
         <p className="text-[16px] font-semibold">INTERIORS</p>
         <p className="text-[16px] font-semibold">ACOUSTICS</p>
       </div>
       <div className="w-full h-[450px] md:h-[85vh] flex gap-2">
-          <Swiper
-            modules={[Autoplay, EffectFade, Pagination, Navigation]}
-            pagination={{ clickable: true }}
-            className="w-full h-full"
-            effect={'fade'}
-            spaceBetween={50}
-            slidesPerView={1}
-            navigation={
-              true
-            }
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-          >
-            {HeroSecImg.map((elem, i) => (
-              <SwiperSlide key={i}>
-                <div
-
-                  style={{ backgroundImage: `url('${elem}')` }}
-                  className="h h-full w-full bg-cover bg-no-repeat bg-center"
-                ></div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <Swiper
+          modules={[Autoplay, EffectFade, Pagination, Navigation]}
+          pagination={{ clickable: true }}
+          className="w-full h-full"
+          effect={"fade"}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+        >
+          {HeroSecImg.map((elem, i) => (
+            <SwiperSlide key={i}>
+              <div
+                style={{ backgroundImage: `url('${elem}')` }}
+                className="h h-full w-full bg-cover bg-no-repeat bg-center"
+              ></div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       <section className="my-6">
         <div className="flex  items-center justify-evenly  gap-4 px-4 ">
-
           <div className="wrapper">
-            <div className="overflow-hidden" >
+            <div className="overflow-hidden">
               <Link href="/project/residence">
                 <Image
                   src="/CTG_Images/1.jpg"
@@ -122,10 +120,9 @@ export default function page() {
             </div>
           </div>
 
-
           <div className="wrapper  ">
-            <div className="" >
-            <Link href="/project/showroom">
+            <div className="">
+              <Link href="/project/showroom">
                 <Image
                   src="/CTG_Images/2.jpg"
                   alt="categories"
@@ -138,10 +135,9 @@ export default function page() {
             </div>
           </div>
 
-
           <div className="wrapper cursor-pointer  ">
-            <div className="" >
-            <Link href="/project/studios">
+            <div className="">
+              <Link href="/project/studios">
                 <Image
                   src="/CTG_Images/3.jpg"
                   alt="categories"
@@ -153,24 +149,19 @@ export default function page() {
               <h1>Studios</h1>
             </div>
           </div>
-
         </div>
-
       </section>
 
-
-      <section className="flex md:flex-col items-center px-8" >
+      <section className="flex md:flex-col items-center px-8">
         <h2 className="text-2xl my-4 ">Residential</h2>
 
         <Swiper
           modules={[Autoplay, Pagination]}
           pagination={{ clickable: true }}
-          autoplay={
-            {
-              delay: 3000,
-              disableOnInteraction: false,
-            }
-          }
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           className="w-full h-full"
           spaceBetween={10}
           slidesPerView={3}
@@ -193,33 +184,30 @@ export default function page() {
             },
           }}
         >
-
-
-          {
-            Residence.map((e, i) => {
-              return <SwiperSlide key={i} className="h-full w-full">
+          {Residence.map((e, i) => {
+            return (
+              <SwiperSlide key={i} className="h-full w-full">
                 <Image
                   alt="portfolio"
                   src={e}
+                  onClick={() => setPreviewImg(e)}
                   width={500}
                   height={500}
                   className="rounded-md aspect-video"
                 />
               </SwiperSlide>
-            })
-          }
+            );
+          })}
         </Swiper>
         <h2 className="md:text-3xl text-2xl my-4 ">Showroom</h2>
 
         <Swiper
           modules={[Autoplay, Pagination]}
           pagination={{ clickable: true }}
-          autoplay={
-            {
-              delay: 3000,
-              disableOnInteraction: false,
-            }
-          }
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           className="w-full h-full"
           spaceBetween={10}
           slidesPerView={3}
@@ -242,11 +230,9 @@ export default function page() {
             },
           }}
         >
-
-
-          {
-            Commercial.map((e, i) => {
-              return <SwiperSlide key={i} className="h-full w-full">
+          {Commercial.map((e, i) => {
+            return (
+              <SwiperSlide key={i} className="h-full w-full">
                 <Image
                   alt="portfolio"
                   src={e}
@@ -255,19 +241,17 @@ export default function page() {
                   className="rounded-md aspect-video"
                 />
               </SwiperSlide>
-            })
-          }
+            );
+          })}
         </Swiper>
         <h2 className="md:text-3xl text-2xl my-4  ">Studio</h2>
 
         <Swiper
           modules={[Autoplay, Pagination]}
-          autoplay={
-            {
-              delay: 3000,
-              disableOnInteraction: false,
-            }
-          }
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           pagination={{ clickable: true }}
           className="w-full h-full"
           spaceBetween={10}
@@ -291,10 +275,9 @@ export default function page() {
             },
           }}
         >
-
-          {
-            Studio.map((e, i) => {
-              return <SwiperSlide key={i} className="h-full w-full">
+          {Studio.map((e, i) => {
+            return (
+              <SwiperSlide key={i} className="h-full w-full">
                 <Image
                   alt="portfolio"
                   src={e}
@@ -303,8 +286,8 @@ export default function page() {
                   className="rounded-md aspect-video"
                 />
               </SwiperSlide>
-            })
-          }
+            );
+          })}
         </Swiper>
         <br />
         <CtaButton
@@ -314,7 +297,16 @@ export default function page() {
         />
         <br />
       </section>
-      <h1 className="text-lg">Visit <Link href="https://www.ashofy.com/" className="text-Secondary hover:underline">Ashofy.com</Link> to Buy the Featured Products</h1>
+      <h1 className="text-lg">
+        Visit{" "}
+        <Link
+          href="https://www.ashofy.com/"
+          className="text-Secondary hover:underline"
+        >
+          Ashofy.com
+        </Link>{" "}
+        to Buy the Featured Products
+      </h1>
 
       <section className="border-t pt-2">
         <div className="clientsImageDiv">
@@ -341,11 +333,31 @@ export default function page() {
             ))}
           </div>
         </div>
-        
+
         <span className="gradSection"></span>
       </section>
 
-
+      <div
+        className={`fixed inset-0 bg-white p-8 ${
+          PreviewImg
+            ? "z-[1000] scale-100 opacity-100"
+            : "-z-50 scale-50 opacity-0"
+        } transition-all duration-300 `}
+      >
+        {PreviewImg && (
+          <Image
+            src={PreviewImg}
+            alt="previewImg"
+            className="rounded-lg"
+            width={500}
+            height={500}
+          />
+        )}
+        <RiCloseCircleLine
+          className="absolute top-2 right-2 text-3xl text-slate-400  cursor-pointer"
+          onClick={() => setPreviewImg(null)}
+        />
+      </div>
     </main>
   );
 }
