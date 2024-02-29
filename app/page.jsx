@@ -238,6 +238,7 @@ export default function page() {
                   src={e}
                   width={500}
                   height={500}
+                  onClick={() => setPreviewImg(e)}
                   className="rounded-md aspect-video"
                 />
               </SwiperSlide>
@@ -282,6 +283,7 @@ export default function page() {
                   alt="portfolio"
                   src={e}
                   width={500}
+                  onClick={() => setPreviewImg(e)}
                   height={500}
                   className="rounded-md aspect-video"
                 />
