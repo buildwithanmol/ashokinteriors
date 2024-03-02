@@ -67,7 +67,6 @@ export default function page() {
     "/ClientsImg/image 5.jpg",
     "/ClientsImg/image 6.jpg",
   ];
-  const [PreviewImg, setPreviewImg] = useState(null);
   return (
     <main className="HomeMain">
       <div className="w-full md:gap-8 gap-2 pb-3 items-center justify-center text-xs md:text-sm hidden md:flex ">
@@ -190,7 +189,7 @@ export default function page() {
                 <Image
                   alt="portfolio"
                   src={e}
-                  onClick={() => setPreviewImg(e)}
+                  onClick={(event) => event.target.requestFullscreen()}
                   width={500}
                   height={500}
                   className="rounded-md aspect-video"
@@ -238,7 +237,7 @@ export default function page() {
                   src={e}
                   width={500}
                   height={500}
-                  onClick={() => setPreviewImg(e)}
+                  onClick={(event) => event.target.requestFullscreen()}
                   className="rounded-md aspect-video"
                 />
               </SwiperSlide>
@@ -283,7 +282,7 @@ export default function page() {
                   alt="portfolio"
                   src={e}
                   width={500}
-                  onClick={() => setPreviewImg(e)}
+                  onClick={(event) => event.target.requestFullscreen()}
                   height={500}
                   className="rounded-md aspect-video"
                 />
@@ -338,28 +337,6 @@ export default function page() {
 
         <span className="gradSection"></span>
       </section>
-
-      <div
-        className={`fixed inset-0 bg-white p-8 ${
-          PreviewImg
-            ? "z-[1000] scale-100 opacity-100"
-            : "-z-50 scale-50 opacity-0"
-        } transition-all duration-300 `}
-      >
-        {PreviewImg && (
-          <Image
-            src={PreviewImg}
-            alt="previewImg"
-            className="rounded-lg"
-            width={500}
-            height={500}
-          />
-        )}
-        <RiCloseCircleLine
-          className="absolute top-2 right-2 text-3xl text-slate-400  cursor-pointer"
-          onClick={() => setPreviewImg(null)}
-        />
-      </div>
     </main>
   );
 }
