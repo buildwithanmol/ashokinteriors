@@ -185,7 +185,7 @@ const Page = ({params}) => {
                               <div key={i} className="overflow-hidden">
                                 <Image
                                   src={elem}
-                                  
+                  onClick={(event) => event.target.requestFullscreen()}
                                   alt="categories"
                                   width={600}
                                   height={300}
@@ -210,6 +210,7 @@ const Page = ({params}) => {
                     <div className="overflow-hidden" key={i}>
                       <Image
                         src={elem}
+                  onClick={(event) => event.target.requestFullscreen()}
                         
                         alt="categories"
                         width={600}

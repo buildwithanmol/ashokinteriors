@@ -10,7 +10,7 @@ function Footer() {
     {
       h3: "SOCIALS",
       link: ["INSTAGRAM", "FACEBOOK"],
-      hrefs: ["https://www.instagram.com/ashofyyourspace/?hl=en", "https://www.facebook.com/people/Ashofyyours-Pace/61555893284192/",],
+      hrefs: ["https://www.instagram.com/ashokinteriors/", "https://www.facebook.com/AshokInteriors?sfnsn=wiwspwa&mibextid=RUbZ1f",],
     },
   ];
   return (
@@ -19,7 +19,7 @@ function Footer() {
         <div key={i}>
           <h3>{elems.h3}</h3>
           {elems.link.map((elem, j) => (
-            <Link href={elems.hrefs[j]} key={j} className="hover:text-Secondary">
+            <Link href={elems.hrefs[j]} key={j} className="hover:text-Secondary" target="_blank">
               {elem}
             </Link>
           ))}
