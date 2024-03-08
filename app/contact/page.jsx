@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 import {
   RiMapPinLine,
   RiMailLine,
@@ -43,9 +44,12 @@ const page = () => {
               SOCIAL LINKS:
             </h2>
             <p className="p-2 text-4xl flex gap-2">
-              <RiFacebookFill />
+             <Link href="https://www.facebook.com/AshokInteriors?sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank">
+             <RiFacebookFill />
+             </Link>
+             <Link href="https://www.instagram.com/ashokinteriors/" target="_blank">
               <RiInstagramLine />
-              <RiTwitterXLine />
+             </Link>
             </p>
           </div>
         </div>
