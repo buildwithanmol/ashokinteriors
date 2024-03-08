@@ -1,5 +1,5 @@
 import React from "react";
-import Link from 'next/link';
+import Link from "next/link";
 import {
   RiMapPinLine,
   RiMailLine,
@@ -21,9 +21,18 @@ const page = () => {
             <RiMapPinLine className="border-2 w-16 h-16 rounded-full border-Secondary p-2" />
             <h2 className="font-semibold">ADDRESS:</h2>
             <p className="p-2 text-sm md:text-xl">
-              Shop No - 03, C-23, Poonam Sagar Complex, Mira Road(E),
-              Thane, Maharashtra,
-              <br /> Pin - 401107
+              <Link
+                className="hover:underline"
+                href="https://www.google.com/maps/search/?api=1&query=Shop+No+-+03,+C-23,+Poonam+Sagar+Complex,+Mira+Road(E),+Thane,+Maharashtra,+Pin+-+401107"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Shop No - 03, C-23, Poonam Sagar Complex, Mira Road(E), Thane,
+                <br />
+                Maharashtra,
+                <br />
+                Pin - 401107
+              </Link>
             </p>
           </div>
 
@@ -31,25 +40,54 @@ const page = () => {
             <RiPhoneLine className="border-2 w-16 h-16 rounded-full border-Secondary p-2" />
             <h2 className="font-semibold">CALL US:</h2>
             <p className="p-2 text-sm md:text-xl">
-            +91 9819215088 <br /> +91 2249728988
+              <Link
+                className="hover:underline"
+                href="tel:+919819215088"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +91 9819215088
+              </Link>{" "}
+              <br />
+              <Link
+                className="hover:underline"
+                href="tel:+912249728988"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +91 2249728988
+              </Link>
             </p>
           </div>
           <div className="flex flex-col items-center justify-start gap-1 text-center pt-2">
             <RiMailLine className="border-2 w-16 h-16 rounded-full border-Secondary p-2" />
             <h2 className="font-semibold">EMAIL:</h2>
-            <p className="p-2 text-sm md:text-xl">info@ashokinteriors.com</p>
+            <Link
+              className="hover:underline"
+              href="mailto:info@ashokinteriors.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              info@ashokinteriors.com
+            </Link>
           </div>
           <div className="flex flex-col items-center justify-start gap-1 text-center pt-3">
             <h2 className="font-semibold text-2xl text-Secondary">
               SOCIAL LINKS:
             </h2>
             <p className="p-2 text-4xl flex gap-2">
-             <Link href="https://www.facebook.com/AshokInteriors?sfnsn=wiwspwa&mibextid=RUbZ1f" target="_blank">
-             <RiFacebookFill />
-             </Link>
-             <Link href="https://www.instagram.com/ashokinteriors/" target="_blank">
-              <RiInstagramLine />
-             </Link>
+              <Link
+                href="https://www.facebook.com/AshokInteriors?sfnsn=wiwspwa&mibextid=RUbZ1f"
+                target="_blank"
+              >
+                <RiFacebookFill />
+              </Link>
+              <Link
+                href="https://www.instagram.com/ashokinteriors/"
+                target="_blank"
+              >
+                <RiInstagramLine />
+              </Link>
             </p>
           </div>
         </div>
