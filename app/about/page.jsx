@@ -4,7 +4,7 @@ import { RiUserStarLine, RiThumbUpLine, RiGroupLine } from "react-icons/ri";
 
 const Page = () => {
   return (
-    <main className="w-full h-full p-10 bg-white">
+    <main className="w-full h-full p-10  bg-white">
       <section className="max-w-4xl mx-auto  py-10">
         <h1 className="uppercase md:text-3xl font-bold text-xl text-center">About Us</h1>
 
